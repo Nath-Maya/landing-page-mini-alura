@@ -13,27 +13,48 @@
    display: flex;
 }
 
+/* !NUESTROS CURSOS */
+
+.contenido-principal-cursos {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.contenido-cursos {
+   display: flex;
+   width: 23%;
+}
+
+/* ! MAPA DE CURSOS */
+
+.footer-mapa-cursos-item-list {
+   display: flex;
+   flex-direction: column;
+   height: 17rem;
+   /* permite quebrar el contenido dependiendo de la altura del height definido */
+   flex-wrap: wrap;
+}
+
 /* !FOOTER */
 
-.rodape-principal-patrocinadores .container{
+.footer-patrocinadores .container{
    display: flex;
    justify-content: space-between;
 }
 
-.rodape-principal-patrocinadores-list {
+.footer-patrocinadores-list {
    display: flex;
    align-items: center;
    justify-content: space-around;
    width: 70%;
-   /* margin-right: 5%; */
-   /* margin: 2.5%; */
+   margin-right: 2.5%;
 }
 
-.rodape-principal-contacto {
+.footer-contacto fieldset {
    width: 25%;
 }
 
-.rodape-principal-contacto-fieldset {
+.footer-contacto-fieldset {
    display: flex;
 }
 
@@ -42,5 +63,56 @@
    height: auto;
 }
 
-/* ! MAPA DE CURSOS */
+/* ? Responsive Version Mobile */
 
+@media (max-widht: 768px) {
+
+
+   .header .container {
+      flex-direction: column;
+      align-items: initial;
+   }
+
+   .header-nav {
+      flex-direction: column;
+   }
+
+   .contenido-principal-cursos {
+      flex-direction: column;
+      /* align-items: initial; */
+   }
+
+   .contenido-cursos {
+      width: 100%;
+   }
+
+   .footer-mapa-cursos-item-list {
+      height: auto;
+      flex-wrap: nowrap;
+      padding: 0.6rem;
+   }
+
+   .footer-patrocinadores .container {
+      flex-direction: column;
+   }
+
+   .footer-contacto {
+      width: 100%;
+      padding: 0.5rem;
+   }
+
+   .footer-patrocinadores-list {
+      align-items: center;
+      width: 100%;
+      margin: 0;
+   }
+
+   .contenido-principal-cursos li {
+      margin: 0.3rem;
+   }
+
+   .footer-contacto-fieldset {
+      justify-content: center;
+   }
+
+}

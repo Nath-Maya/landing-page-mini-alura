@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-	width: 94%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ body {
 	color: inherit;
 }
 
-.header-nav-link {
+.header-nav {
 	padding: 10px;
 	margin-bottom: 10px;
 	color: #9799A6;
@@ -49,7 +49,7 @@ body {
 	text-align: center;
 }
 
-.contenido-principal-cursos-link {
+.contenido-cursos {
 	height: 100px;
 	background-color: #FFF;
 	text-align: center;
@@ -59,7 +59,7 @@ body {
 	position: relative;
 }
 
-.contenido-principal-cursos-link a {
+.contenido-cursos a {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
@@ -71,11 +71,11 @@ body {
 	left: 0;
 }
 
-.contenido-principal-cursos-link:hover {
+.contenido-cursos:hover {
 	box-shadow: 4px 4px 4px #CCC;
 }
 
-.contenido-principal-cursos-link a:before {
+.contenido-cursos a:before {
 	content: '';
 	display: block;
 	width: 50px;
@@ -83,35 +83,36 @@ body {
 	margin: 10px auto;
 }
 
-.contenido-principal-cursos-link:nth-child(even) a:before {
+.contenido-cursos:nth-child(even) a:before {
 	background: url(../img/background1.svg) no-repeat;	
 }
 
-.contenido-principal-cursos-link:nth-child(odd) a:before {
+.contenido-cursos:nth-child(odd) a:before {
 	background: url(../img/background2.svg) no-repeat;
 }
 
 
-.rodape-principal {
+.footer-mapa-cursos {
 	background-color: #324C64;
 	padding-top: 20px;
 }
 
-.rodape-principal .subtitulo {
+.footer-mapa-cursos .subtitulo {
 	color: #FFF;
 }
 
-.rodape-principal-navMap-link {
+.footer-mapa-cursos-item {
 	text-decoration: none;
 	color: #FFF;
 	margin-top: 10px;
 }
 
-.rodape-principal-navMap-link {
+.footer-mapa-cursos-item {
 	font-size: .9em;
 }
 
-.navmap-list-title {
+
+.footer-mapa-cursos-item-list h4{
 	font-weight: 700;
 	font-size: 1.3em;
 	margin: .9em 0;
@@ -120,7 +121,7 @@ body {
 	padding-bottom: .2em;
 }
 
-.navmap-list-title + .rodape-principal-navMap-link {
+.navmap-list-title + .footer-mapa-cursos-item {
 	margin-top: 0;
 }
 
@@ -129,18 +130,18 @@ body {
 .navmap-list-title-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
 .navmap-list-title-backend { color: #25D285; border-left: 4px solid #25D285; }
 
-.rodape-principal-patrocinadores {
+.footer-patrocinadores {
 	margin-top: 30px;
 	background: #F2F5F7;
 	padding: 20px 0;
 }
 
-.rodape-principal-contacto {
+.footer-contacto {
 	margin-top: 20px;
 	text-align: center;
 }
 
-.rodape-principal-contacto label[for=email-contato] {
+.footer-contacto label[for=email-contato] {
 	font-weight: bold;
 	font-size: 14px;
 	color: #000;
@@ -148,13 +149,13 @@ body {
 	display: block;
 }
 
-.rodape-principal-contacto-emailInput {
+.footer-contacto-imput {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	padding: 10px;
 }
 
-.rodape-principal-contacto-submit {
+.footer-contacto-submit {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background-color: #4DBA7A;
@@ -163,39 +164,39 @@ body {
 	
 }
 
-.rodape-principal-contacto-submit,
-.rodape-principal-contacto-emailInput {
+.footer-contacto-submit,
+.footer-contacto-imput {
 	outline: 0;
 	border: 1px solid #4DBA7A;
 	box-sizing: border-box;
 	font-size: 16px;
 }
 
-.videoSobre {
+.contenido-video {
 	background-color: #5E9EDC;
 	padding: 25px 0;
 
 }
 
-.videoSobre-video {
+.contenido-video-enlace {
 	max-width: 100%;
 }
 
-.videoSobre .container {
+.contenido-video .container {
 	color: #FFF;
 }
 
-.videoSobre-sobre-title {
+.contenido-video-title {
 	font-size: 1.2em;
 	font-weight: bolder;
 }
 
-.videoSobre-sobre {
+.contenido-video {
 	font-size: 1.3em;
 	line-height: 2;
 }
 
-.videoSobre-button {
+.contenido-video-button {
 	border-radius: 8px;
 	background-color: #ec6e5a;
 	display: block;
@@ -206,7 +207,7 @@ body {
 	outline: none;
 }
 
-.rodape-principal-contacto-legend {
+.footer-contacto-legend {
 	margin-bottom: 10px;
 }
 
@@ -220,12 +221,12 @@ body {
 		text-align: left;
 	}
 
-	.header-nav-link {
+	.header-nav {
 		border-radius: 5px;
 		border: 1px solid #9799A6;
 	}
 
-	.header-nav-link:hover {
+	.header-nav:hover {
 		color: #FFF;
 		background-color: #9799A6;
 	}
@@ -238,48 +239,48 @@ body {
 		width: auto;
 	}
 
-	.header-nav-link {
+	.header-nav {
 		width: auto;
 		margin: 0 0 0 10px;
 	}
 
-	.rodape-principal-contacto {
+	.footer-contacto {
 		margin-top: 0;
 		text-align: left;
 	}
 
-	.contenido-principal-cursos-link:nth-child(3n) {
+	.contenido-cursos:nth-child(3n) {
 		margin-right: 0;
 	}
 
-	.contenido-principal-cursos-link:nth-child(3n+1) {
+	.contenido-cursos:nth-child(3n+1) {
 		margin-left: 0;
 	}
 
 }
 
 @media(min-width: 1000px) {
-	.contenido-principal-cursos-link {
+	.contenido-cursos {
 		margin: 1.333%;
 	}
 
-	.contenido-principal-cursos-link:nth-child(3n) {
+	.contenido-cursos:nth-child(3n) {
 		margin-right: 1.33%;
 	}
 
-	.contenido-principal-cursos-link:nth-child(3n+1) {
+	.contenido-cursos:nth-child(3n+1) {
 		margin-left: 1.333%;
 	}
 
-	.contenido-principal-cursos-link:nth-child(4n) {
+	.contenido-cursos:nth-child(4n) {
 		margin-right: 0;
 	}
 
-	.contenido-principal-cursos-link:nth-child(4n+1) {
+	.contenido-cursos:nth-child(4n+1) {
 		margin-left: 0;
 	}
 
-	.videoSobre-sobre {
+	.contenido-video {
 		margin-left: 1.5em;
 	}
 
