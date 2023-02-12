@@ -25,6 +25,37 @@
    width: 23%;
 }
 
+/* !VIDEO */
+
+.contenido-principal-video .container {
+   display: flex;
+}
+
+.contenido-video {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.contenido-video-enlace {
+   flex-grow: 2;
+   margin: 1rem;
+}
+
+.contenido-video-list {
+   flex-grow: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ! MAPA DE CURSOS */
 
 .footer-mapa-cursos-item-list {
@@ -63,9 +94,21 @@
    height: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ? Responsive Version Mobile */
 
-@media (max-widht: 768px) {
+@media(max-width: 768px) {
 
 
    .header .container {
@@ -113,6 +156,10 @@
 
    .footer-contacto-fieldset {
       justify-content: center;
+   }
+
+   #header-app {
+      order: -1;
    }
 
 }

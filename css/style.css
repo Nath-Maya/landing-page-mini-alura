@@ -33,9 +33,9 @@ body {
 	transition: .5s;
 	display: block;
 	text-align: center;
-
 	border-bottom: 1px solid #9799A6;
 }
+
 
 .contenido-principal {
 	margin-top: 20px;
@@ -172,7 +172,7 @@ body {
 	font-size: 16px;
 }
 
-.contenido-video {
+.contenido-principal-video {
 	background-color: #5E9EDC;
 	padding: 25px 0;
 
@@ -182,7 +182,7 @@ body {
 	max-width: 100%;
 }
 
-.contenido-video .container {
+.contenido-principal-video .container {
 	color: #FFF;
 }
 
